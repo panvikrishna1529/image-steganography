@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔐 Steganography Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🔏 Image Steganography</h1>
+        <p>Hide and Reveal Messages in Images Securely!</p>
+
+        <div id="home-buttons">
+            <button onclick="showEncryption()">🔒 Encrypt Image</button>
+            <button onclick="showDecryption()">🔓 Decrypt Image</button>
+        </div>
+
+        <div id="encryption-section" class="hidden">
+            <h2>🔒 Encryption</h2>
+            <input type="file" id="encrypt-image" accept="image/*">
+            <input type="text" id="secret-message" placeholder="Enter your secret message">
+            <input type="password" id="encryption-password" placeholder="Enter a password">
+            <button onclick="encryptImage()">Encrypt</button>
+            <p id="encrypt-status"></p>
+            <a id="download-encrypted" class="hidden" download>⬇️ Download Encrypted Image</a>
+        </div>
+
+        <div id="decryption-section" class="hidden">
+            <h2>🔓 Decryption</h2>
+            <input type="file" id="decrypt-image" accept="image/*">
+            <input type="password" id="decryption-password" placeholder="Enter the password">
+            <button onclick="decryptImage()">Decrypt</button>
+            <p id="decrypt-status"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
