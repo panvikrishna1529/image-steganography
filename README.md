@@ -1,4 +1,4 @@
-# 🎨 Image Steganography Web App
+![result3](https://github.com/user-attachments/assets/39c1c9ac-01cc-433b-a706-a711dd8d798d)# 🎨 Image Steganography Web App
 
 This web application allows users to **hide secret messages inside images (encryption)** and **extract hidden messages from encrypted images (decryption)** using **steganography**. Built with **Flask (Python), OpenCV, HTML, CSS, and JavaScript**, it provides a user-friendly interface for secure communication.
 
@@ -90,4 +90,9 @@ python app.py
 5️⃣ Click **Deploy** 🎉
 
 
-![Alt Text](demo-results/encrypted.png)
+<p align="center">
+    <img src="demo-results/result1.png" width="250" alt="Image 1">
+    <img src="demo-results/result2.png" width="250" alt="Image 2">
+    <img src="demo-results/result3.png" width="250" alt="Image 3">
+</p>
+
